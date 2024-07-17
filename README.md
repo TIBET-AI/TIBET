@@ -2,11 +2,11 @@
 
 #### **[ECCV 2024] TIBET: Identifying and Evaluating Biases in Text-to-Image Generative Models**
 
-*Aditya Chinchure🔸, Pushkar Shukla🔸, Gaurav Bhatt,  Kiri Salij,  Kartik Hosanagar,  Leonid Sigal, Matthew Turk*
+*Aditya Chinchure🔸, Pushkar Shukla🔸, Gaurav Bhatt,  Kiri Salij,  Kartik Hosanagar, Leonid Sigal, Matthew Turk*
 (🔸 indicates equal contribution)
 
 ### Dataset
-TBA
+The dataset is available to download here: [TIBET Website](https://tibet-ai.github.io). This dataset contains 100 prompts, and their associated bias axes, counterfactuals, and 48 images for each prompt and counterfactual generated using Stable Diffusion 2.1.
 
 ### Code
 TBA
