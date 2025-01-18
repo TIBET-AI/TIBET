@@ -24,11 +24,11 @@ conda install cudatoolkit
 pip install -r requirements.txt
 ```
 
-2. Update `ckpt` in `vqa_configs/minigptv2_eval.yaml` to the path of the model checkpoint. The model checkpoint can be downloaded from [here](https://github.com/Vision-CAIR/MiniGPT-4). We use the `MiniGPT-v2 (online developing demo)` configuration.
+2. Update `ckpt` in `vqa_configs/minigptv2_eval.yaml` ([here](https://github.com/TIBET-AI/TIBET/blob/main/vqa_configs/minigptv2_eval.yaml#L8)) to the path of the model checkpoint. The model checkpoint can be downloaded from [here](https://github.com/Vision-CAIR/MiniGPT-4). We use the `MiniGPT-v2 (online developing demo)` configuration.
 
-3. [Maybe optional] Following the instructions in the [MiniGPTv2 Repo](https://github.com/Vision-CAIR/MiniGPT-4), you also need to download Llama 2 weights and update the path in `minigpt4/configs/models/minigpt_v2.yaml`. It may also be possible to let Huggingface handle this, as long as you have signed into Huggingface CLI and have access to the Llama 2 7B model.
+3. [Maybe optional] Following the instructions in the [MiniGPTv2 Repo](https://github.com/Vision-CAIR/MiniGPT-4), you also need to download Llama 2 weights and update the path in `minigpt4/configs/models/minigpt_v2.yaml` ([here](https://github.com/TIBET-AI/TIBET/blob/main/minigpt4/configs/models/minigpt_v2.yaml#L14)). It may also be possible to let Huggingface handle this, as long as you have signed into Huggingface CLI and have access to the Llama 2 7B model.
 
-4. Update TIBET configurations in `main.py`:
+4. Update TIBET configurations in `main.py` ([here](https://github.com/TIBET-AI/TIBET/blob/main/main.py#L15)):
 - `NUM_IMAGES = 2` - Number of images to generate per prompt and counterfactural prompt. Default in the paper is 48 images
 - `IMG_DIR = 'images'` - Base directory path to save images
 - `OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')` - OpenAI API key
