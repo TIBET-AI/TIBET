@@ -16,6 +16,8 @@ The dataset is available to download here: [TIBET Website](https://tibet-ai.gith
 
 This codebase is based on the [MiniGPTv2](https://github.com/Vision-CAIR/MiniGPT-4) codebase. We set this up with Stable Diffusion 2.1 to generate images (see the `tibet/gen_images.py` file). You may choose to use any model you like. Finally, TIBET requires you to use your own OpenAI API key (see step 4) to obtain counterfactual prompts. 
 
+We tested this on a single 48 GB Nvidia GPU. If you have a smaller GPU, consider splitting the image gen part ([main.py - Line 36](https://github.com/TIBET-AI/TIBET/blob/main/main.py#L36)) and the VQA part ([main.py - Line 39](https://github.com/TIBET-AI/TIBET/blob/main/main.py#L39)).
+
 1. Environment setup:
 ```
 conda create --name tibet python=3.11
